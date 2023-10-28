@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Playfair+Display&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+}
+h3{
+    font-size: 0.95rem;
+    color: #9b3016;
+    font-style: italic;
+}
+p, li{
+    font-size: 0.85rem;
+    color: #3a424d;
+}
+h4{
+    font-size: 0.9rem;
+    color: #3a424d;
+}
+
+ul {
+    list-style-type: none;
+}
+
+span{
+    color: #3a424d;
+}
+
+hr{
+    background-color:  #3a424d;
+    width: 95%;
+    margin-left: 10px;
+}
+
+.print-area .header .acron{
+    color: whitesmoke;
+    font-size: 2.1rem;
+    margin-top: 2px;
+}
+
+.rect{
+    width: 100%;
+    height: 20px;
+    background-color: rgb(19, 36, 52);
+    margin-top: 10px;
+}
+
+.print-area{
+    width: 100%;
+    margin: 10px auto;
+}
+
+.print-area .header{
+    width: 100%;
+    height: 150px;
+    background-color: #9b3016;
+    text-align: center;
+    color: whitesmoke;
+}
+
+.print-area .header .h1-name{
+    margin-top: 18px;
+    color: whitesmoke;
+    font-size: 1.8rem;
+}
+
+.print-area .header .box{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border: 2px solid whitesmoke;
+    margin-right: 10px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.print-area .header .box h1{
+    margin-top: 9px;
+}
+
+.content{
+    display: flex;
+    margin-left: 10px;
+}
+
+.content .left-area{
+    width: 60%;
+    height: 80px;
+    background-color: #ffffff;
+    margin-right: 10px;
+}
+
+.content .left-area .skills{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.content .left-area .skills p{
+    margin-top: 10px;
+}
+
+.content .right-area{
+    width: 40%;
+    height: 1100px;
+    background-color: #f5f5f5;
+    margin-bottom: 500px;
+}
+
+.content .right-area .skills{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+.content .right-area .skills p{
+    margin-top: 10px;
+}
+
+.footer{
+    width: 100%;
+    height: 80px;
+    background-color: #9b3016;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+    margin-bottom: 2000px;
+}
+
+.footer p{
+    display: inline-block;
+    color: whitesmoke;
+    margin-top: 35px;
+}
+
+button{
+    font-size: 25px;
+    padding: 10px 20px;
+    margin: 50px 0 50px 140px;
+    background-color: rgb(83,83,83);
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,.5);
+    cursor: pointer;
+    transition: .5s;
+}
+
+button:hover{
+    background-color: black;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+}
+
+@media print{
+    body *{
+        visibility: hidden;
+    }
+    .print-area *{
+        visibility: visible;
+    }
+}
+
